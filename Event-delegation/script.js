@@ -30,7 +30,7 @@ document.querySelector("#sports").addEventListener("click",function(e){
   const sports=document.querySelector("#sports");
   const newElement=document.createElement("li");
   newElement.setAttribute("id","rugby");
-  newElement.innerText="Rugby";
+  newElement.innerText="Rug by";
   sports.appendChild(newElement);
 })
 

@@ -48,7 +48,7 @@ document.getElementById("buton").addEventListener("click", () => {
   console.log("Butona tıklandı");
 });
 
-//Butona basınca orada true olduğu için event capturing ilk olarak div'in event listener'ını çalıştırır, çünkü true verdiğimiz için olay dışarıdan içeriye doğru yayılacaktır (capture phase).Sonra butonun event listener'ı çalışır
+//Butona basınca orada true olduğu için event capturing ilk olarak div'in event listener'ını çalıştırır, çünkü true verdiğimiz i çin olay dışarıdan içeriye doğru yayılacaktır (capture phase).Sonra butonun event listener'ı çalışır
 //Dolayısıyla çıktı Div'e tıklandı (Capture),Butona tıklandı şeklinde olur.
 
 //Eğer div içinde herhangi bir yere tıklanırsa: sadece dive tıklanmış olur div event listenerı çalışır ve dive tıklandı yazısı çıkar. içe doğru gitmez.

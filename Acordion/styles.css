@@ -1,0 +1,69 @@
+/*General Styles*/
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+  background: url(./background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height:100vh;
+  position:relative;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.accordion{
+  width:65%;
+  background-color: white;
+  padding:10px;
+  border-radius: 30px;
+ 
+}
+.accordion .accordion-title{
+  margin-bottom:30px;
+  text-align: center;
+}
+.accordion .content-container .question{
+  padding:18px 0;
+  font-size: 22px;
+  cursor:pointer;
+  border-bottom: 1px solid #000;
+  position:relative;
+}
+
+.accordion .content-container .question::after{
+  content:"+";
+  position:absolute;
+  right:-5px;
+}
+.accordion .content-container .answer{
+  padding-top: 15px;
+  font-size: 22px;
+  line-height: 1.5;
+  width:100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+/*Javascript styling, JavaScript sadece tıklanan content-container'a active sınıfını ekliyor.Geri kalan styling css de eklenmiş oluyor*/
+
+
+.accordion .content-container.active .answer { /*accordion ile content-container arasındaki boşluğa bak bir de content-container ile active class arasında bak. aradaki boşluk yok yani ikisi farklı amaç*/
+  max-height: 300px;
+}
+
+.accordion .content-container.active .question {
+  font-size: 18px;
+  transition: font-size 0.5s;
+}
+
+.accordion .content-container.active .question::after {
+  content: "-";
+  font-size: 30px;
+  transition: all 0.3s ease;
+}

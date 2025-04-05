@@ -1,0 +1,53 @@
+/*General Styles*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: url(./background.jpg) no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 60%;
+  border-radius: 30px;
+  background-color: white;
+  height: 250px;
+  box-shadow: 0 0 3px;
+}
+
+#timer {
+  width: 100%;
+  font-size: 72px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 35px;
+}
+.buttons {
+  text-align: center;
+}
+button {
+  margin: 0 10px;
+  border: none;
+}
+button i {
+  font-size: 2rem;
+  padding: 10px;
+  color: #fff;
+  width: 50px;
+}
+#play {
+  background-color: green;
+}
+#pause {
+  background-color: orange;
+}
+#reset {
+  background-color: red;
+}
